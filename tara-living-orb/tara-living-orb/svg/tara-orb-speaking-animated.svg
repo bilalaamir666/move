@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%" role="img" aria-label="Tara"><defs>
+<linearGradient id="tara-b" x1="0.1" y1="0.95" x2="0.9" y2="0.05">
+  <stop offset="0" stop-color="#FF9A5A"/><stop offset="0.45" stop-color="#F0428F"/><stop offset="1" stop-color="#8B3DF5"/>
+</linearGradient>
+<radialGradient id="tara-s" cx="0.36" cy="0.3" r="0.8">
+  <stop offset="0.45" stop-color="#3B0A6B" stop-opacity="0"/><stop offset="1" stop-color="#3B0A6B" stop-opacity="0.55"/>
+</radialGradient>
+<radialGradient id="tara-h"><stop offset="0" stop-color="#FFFFFF" stop-opacity="0.9"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/></radialGradient>
+<radialGradient id="tara-r" cx="0.62" cy="0.94" r="0.5"><stop offset="0" stop-color="#FFD0A8" stop-opacity="0.55"/><stop offset="1" stop-color="#FFD0A8" stop-opacity="0"/></radialGradient>
+<clipPath id="tara-c"><circle cx="100" cy="100" r="74"/></clipPath>
+<filter id="tara-f" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="14"/></filter>
+<style>
+.blob,.star,.bar{transform-box:fill-box;transform-origin:center}
+.swirl,.core,.ring{transform-origin:100px 100px}
+.b1{animation:d1 9s ease-in-out infinite alternate}
+.b2{animation:d2 11s ease-in-out infinite alternate}
+.b3{animation:d3 7s ease-in-out infinite alternate}
+.b4{animation:d4 8s ease-in-out infinite alternate}
+@keyframes d1{to{transform:translate(30px,-26px)}}
+@keyframes d2{to{transform:translate(-34px,30px)}}
+@keyframes d3{to{transform:translate(-28px,-30px)}}
+@keyframes d4{to{transform:translate(36px,34px)}}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes ripple{from{transform:scale(1);opacity:.75}to{transform:scale(1.3);opacity:0}}
+@keyframes breathe{from{transform:scale(1)}to{transform:scale(1.045)}}
+@keyframes eq{from{transform:scaleY(.3)}to{transform:scaleY(1)}}
+.bar{animation:eq .5s ease-in-out infinite alternate}.bar:nth-child(2){animation-delay:.15s}.bar:nth-child(3){animation-delay:.3s}.bar:nth-child(4){animation-delay:.1s}.bar:nth-child(5){animation-delay:.25s}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}.ring{opacity:0}}
+</style></defs><g class="core"><circle cx="100" cy="100" r="74" fill="url(#tara-b)"/><g clip-path="url(#tara-c)"><g class="swirl" filter="url(#tara-f)"><circle class="blob b1" cx="68" cy="132" r="46" fill="#FFA35C" opacity="1.0"/><circle class="blob b2" cx="132" cy="78" r="50" fill="#7C3AED" opacity="1.0"/><circle class="blob b3" cx="124" cy="132" r="40" fill="#FF4FA3" opacity="1.0"/><circle class="blob b4" cx="78" cy="70" r="30" fill="#FFD1E8" opacity="0.85"/></g></g><circle cx="100" cy="100" r="74" fill="url(#tara-s)"/><circle cx="100" cy="100" r="74" fill="url(#tara-r)"/><g fill="#FFFFFF"><g><rect class="bar" x="65.5" y="89" width="9" height="22" rx="4.5"/><rect class="bar" x="80.5" y="80" width="9" height="40" rx="4.5"/><rect class="bar" x="95.5" y="72" width="9" height="56" rx="4.5"/><rect class="bar" x="110.5" y="80" width="9" height="40" rx="4.5"/><rect class="bar" x="125.5" y="89" width="9" height="22" rx="4.5"/></g></g><ellipse cx="74.84" cy="65.96" rx="31.08" ry="19.98" transform="rotate(-28 74.84 65.96)" fill="url(#tara-h)"/></g></svg>
